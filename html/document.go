@@ -1,8 +1,8 @@
 package html
 
 /*
-#cgo CFLAGS: -I../../../clibs/include/libxml2
-#cgo LDFLAGS: -lxml2 -L../../../clibs/lib
+#cgo CFLAGS: -I/usr/include/libxml2
+#cgo LDFLAGS: -lxml2
 
 #include <libxml/HTMLtree.h>
 #include <libxml/HTMLparser.h>

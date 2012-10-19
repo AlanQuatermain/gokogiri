@@ -1,8 +1,8 @@
 package xml
 
 /*
-#cgo CFLAGS: -I../../../clibs/include/libxml2
-#cgo LDFLAGS: -lxml2 -L../../../clibs/lib
+#cgo CFLAGS: -I/usr/include/libxml2
+#cgo LDFLAGS: -lxml2
 
 #include "helper.h"
 */

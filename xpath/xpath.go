@@ -1,8 +1,8 @@
 package xpath
 
 /* 
-#cgo CFLAGS: -I../../../clibs/include/libxml2
-#cgo LDFLAGS: -lxml2 -L../../../clibs/lib
+#cgo CFLAGS: -I/usr/include/libxml2
+#cgo LDFLAGS: -lxml2
 #include <libxml/xpath.h> 
 #include <libxml/xpathInternals.h>
 #include <libxml/parser.h>
@@ -79,12 +79,14 @@ func (xpath *XPath) Evaluate(nodePtr unsafe.Pointer, xpathExpr *Expression) (nod
 }
 
 func (xpath *XPath) SetDeadline(deadline *time.Time) {
+    /*
 	if deadline == nil {
 		C.xmlXPathContextSetDeadline(xpath.ContextPtr, C.time_t(0))
 	} else {
 		t := deadline.Unix()
 		C.xmlXPathContextSetDeadline(xpath.ContextPtr, C.time_t(t))
 	}
+    */
 }
 
 func (xpath *XPath) Free() {
